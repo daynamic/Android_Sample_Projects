@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Activity Two"
+        android:textSize="33sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click here for Content Provider \n tutorial"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/ButtonCp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

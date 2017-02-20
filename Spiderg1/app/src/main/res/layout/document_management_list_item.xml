@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCBCBC">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/OuterOne"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff">
+        
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/leftMost"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/photo1"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="10dip"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                 />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:id="@+id/SecondLeft"
+            android:layout_toRightOf="@+id/leftMost"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textViewrfqsnt_name"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:layout_below="@+id/textViewrfqsnt_name"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:id="@+id/textViewrfqsnt_sender"
+                />
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageViewglad_image"
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="10dip"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                android:layout_below="@+id/textViewrfqsnt_sender"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextViewglad_tech_name"
+                android:text="Gladris technologies"
+                android:layout_marginLeft="3dp"
+                android:textColor="#6D8CE5"
+                android:textSize="14sp"
+                android:layout_alignBottom="@+id/imageViewglad_image"
+                android:layout_toRightOf="@+id/imageViewglad_image"
+                android:layout_toEndOf="@+id/imageViewglad_image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ashwani Rathore sent RFQ with document no"
+                android:textSize="8sp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/imageViewglad_image"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ThirdLeft"
+            android:layout_toRightOf="@+id/SecondLeft"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo5"
+                android:layout_below="@+id/imageViewdoc_numb"
+                android:layout_alignRight="@+id/imageViewdoc_numb"
+                android:layout_alignEnd="@+id/imageViewdoc_numb"
+                android:id="@+id/imageView" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewdoc_numb"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo6"/>
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/logo4"
+                android:layout_alignTop="@+id/imageViewdoc_numb"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView" />
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageViewimage_1"
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:src="@drawable/logo1"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="10dip"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageViewimage_2"
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:src="@drawable/logo2"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="10dip"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+                app:riv_mutate_background="true"
+                android:layout_alignTop="@+id/imageViewimage_1"
+                android:layout_centerHorizontal="true" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageViewimage_3"
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:src="@drawable/logo3"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="10dip"
+                app:riv_border_width="0dip"
+                app:riv_border_color="#333333"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                app:riv_mutate_background="true"
+                android:layout_alignTop="@+id/imageViewimage_2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/ThirdLeft">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:14"
+                android:textSize="9sp"
+                android:textColor="#6D8CE5"
+                android:id="@+id/time_stamp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo12"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/time_stamp"
+                android:layout_alignStart="@+id/time_stamp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

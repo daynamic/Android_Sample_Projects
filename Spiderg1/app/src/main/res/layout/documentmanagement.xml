@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asharm93.test_knowledge.DocumentManagement">
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/App_bar_layout">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tool_bar_for_new_landing"
+            android:gravity="top"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationContentDescription="@string/abc_action_bar_up_description"
+            android:background="#3A4A67"
+
+            >
+            <TextView
+                android:id="@+id/TextView_For_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Document Management"
+                android:maxLength="20"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs_for_new_landing"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:fillViewport="true"
+            android:background="#3A4A67"
+            android:layout_below="@+id/tool_bar_for_new_landing"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/pager_for_documentmangement"
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/App_bar_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
