@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/App_bar_layout">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tool_bar_for_new_landing"
+            android:gravity="top"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationContentDescription="@string/abc_action_bar_up_description"
+            android:background="#4692F0"
+
+            >
+            <TextView
+                android:id="@+id/TextView_For_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Product Details"
+                android:maxLength="20"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MainLayout"
+        android:layout_below="@+id/App_bar_layout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/forProdName"
+            android:background="#F5F5F5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4692F0"
+                android:id="@+id/TvProd_name"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/MiddleOne"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/forProdName"
+            android:background="#F5F5F5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/forProddetail"
+            android:background="#F5F5F5"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/MiddleOne">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textColor="#4692F0"
+                android:id="@+id/TvProd_price"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/Nearby"
+                android:text="hey"
+                android:textSize="10sp"
+                android:layout_below="@+id/TvProd_price"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/LV_all_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/forProddetail"
+            android:requiresFadingEdge="vertical">
+
+        </ListView>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

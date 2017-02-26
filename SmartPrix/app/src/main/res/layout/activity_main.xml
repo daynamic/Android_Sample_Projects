@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SplashActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/App_bar_layout">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tool_bar_for_new_landing"
+            android:gravity="top"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationContentDescription="@string/abc_action_bar_up_description"
+            android:background="#4692F0"
+
+            >
+            <TextView
+                android:id="@+id/TextView_For_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="SmartPrix"
+                android:maxLength="20"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ListView
+        android:id="@+id/LV_all_categoris"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:layout_below="@+id/App_bar_layout"
+        android:requiresFadingEdge="vertical">
+
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/LV_all_categoris"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp" />
+
+
+</RelativeLayout>
