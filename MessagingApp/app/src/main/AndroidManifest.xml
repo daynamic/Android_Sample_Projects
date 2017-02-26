@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.asharm93.messagingapp" >
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name="com.test.asharm93.messagingapp.protocol.GlobalDataStore"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.test.asharm93.messagingapp.ui.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.test.asharm93.messagingapp.ui.activities.MessagingMainActivity"
+            android:label=""
+            >
+        </activity>
+        <activity
+            android:name="com.test.asharm93.messagingapp.ui.activities.NewMessageActivity"
+            android:label=""
+            >
+        </activity>
+        <activity
+            android:name="com.test.asharm93.messagingapp.ui.activities.BackUpContacts"
+            android:label=""
+            >
+        </activity>
+        <receiver android:name="com.test.asharm93.messagingapp.broadcastrcvrs.SmsBroadcastReceiver" android:exported="true" >
+            <intent-filter  >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="410447661383-kgqtukan6n5brrgod0ef5nnpqouclh5g.apps.googleusercontent.com" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Messaging App</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_header">Messaging</string>
+    <string name="new_heder">New Message</string>
+    <string name="backup_messages">Back Up Messages to Google Drive</string>
+    <string name="backup_message_btn">Click here \n To back up your messages to Google Drive</string>
+</resources>

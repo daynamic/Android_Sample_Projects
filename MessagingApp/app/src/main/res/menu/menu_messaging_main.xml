@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MessagingMainActivity">
+    <item
+        android:id="@+id/action_sync"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cached_white_48dp"
+        />
+    <item
+        android:id="@+id/action_overFlow"
+        android:title="OVERFLOW"
+        android:icon="@drawable/ic_more_vert_white_48dp"
+        app:showAsAction="always" />
+</menu>

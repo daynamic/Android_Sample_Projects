@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sb__background">#ff323232</color>
+    <color name="sb__text_color">#ffffffff</color>
+    <color name="sb__action_text_color">#ffffffff</color>
+    <color name="sb__action_bg_color">#1affffff</color>
+    <color name="red">#aa0000</color>
+    <color name="green">#00aa00</color>
+    <color name="blue">#50ABF1</color>
+    <color name="yellow">#aaaa00</color>
+    <color name="white">#ffffff</color>
+    <color name="Gray_for_listing">#BCBCBC</color>
+    <color name="darkGray">#606060</color>
+    <color name="forlyout">#0B54DD</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="bck_ground">#4692F0</color>
+    <color name="material_indigo_500">#3F51B5</color>
+    <color name="material_indigo_600">#3949AB</color>
+    <color name="material_teal_500">#009688</color>
+    <item name="grey" type="color">#B3B3B3</item>
+    <color name="black">#000000</color>
+</resources>
