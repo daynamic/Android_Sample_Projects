@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/OuterOne"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff">
+
+        <!--<RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/leftMost"
+            >
+
+            <ImageView
+                
+                android:id="@+id/imageView1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/example_appwidget_preview"
+                android:scaleType="fitCenter"
+
+                />
+        </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SecondLeft"
+
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textViewrfqsnt_name"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextViewglad_tech_name"
+                android:text="Dummy"
+                android:textColor="#6D8CE5"
+                android:textSize="14sp"
+                android:layout_below="@+id/textViewrfqsnt_sender"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:id="@+id/textViewrfqsnt_sender"
+                android:layout_below="@+id/textViewrfqsnt_name"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
